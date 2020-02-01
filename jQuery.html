@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
+<body>
+	<input type="button" name="btn" id="btn" value="кнопка"/>
+	<script type="text/javascript">
+		$('#btn').css({ "width": "200px", "height": "100px" });
+		$('#btn').click(function(){
+			var n=parseInt(Math.random()*4096);
+			var str = "#" + Number(n).toString(16);
+			$('body').css( "backgroundColor", str ); 
+		});
+	</script>
+</body>
+</html>
